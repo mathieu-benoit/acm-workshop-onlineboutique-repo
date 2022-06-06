@@ -1,0 +1,18 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: sidecars
+upstream:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/anthos-service-mesh-samples
+    directory: /docs/online-boutique-asm-manifests/sidecars
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/anthos-service-mesh-samples
+    directory: /docs/online-boutique-asm-manifests/sidecars
+    ref: main
+    commit: e5cbc92ee36343063cbb07758323044dc5ab7b34

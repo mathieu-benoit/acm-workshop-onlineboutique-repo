@@ -14,3 +14,4 @@ components:
 - ../upstream/service-accounts/for-memorystore
 - ../upstream/authorization-policies/all
 - ../upstream/authorization-policies/for-memorystore
+- ../upstream/sidecars/all
