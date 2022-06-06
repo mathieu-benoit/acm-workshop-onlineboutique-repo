@@ -11,9 +11,4 @@ patchesStrategicMerge:
     name: onlineboutique
   $patch: delete
 components:
-- ../upstream/service-accounts/all
-- ../upstream/service-accounts/for-memorystore
-- ../upstream/authorization-policies/all
-- ../upstream/authorization-policies/for-memorystore
-- ../upstream/sidecars/all
 - network-policies

@@ -5,6 +5,3 @@ resources:
 namespace: onlineboutique
 components:
 - for-virtualservice-host
-- authorization-policies/for-namespace
-- authorization-policies/for-ingress-gateway
-- sidecars/for-namespace
