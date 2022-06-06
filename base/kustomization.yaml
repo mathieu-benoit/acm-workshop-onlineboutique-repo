@@ -14,3 +14,4 @@ components:
 - network-policies
 - ../upstream/service-accounts/all
 - ../upstream/authorization-policies/all
+- ../upstream/sidecars/all
