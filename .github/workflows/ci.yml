@@ -24,6 +24,10 @@ jobs:
         if: ${{ always() }}
         run: |
           kpt fn eval tmp/ --results-dir results --image gcr.io/kpt-fn/kubeval:v0.2 -- strict=true ignore_missing_schemas=true
+      - name: get external templates
+        if: ${{ always() }}
+        run: |
+          kpt pkg get https://github.com/mathieu-benoit/acm-workshop-policies tmp/templates
       - name: gatekeeper
         if: ${{ always() }}
         run: |
