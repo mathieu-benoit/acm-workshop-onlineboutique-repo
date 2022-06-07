@@ -8,3 +8,15 @@ components:
 - authorization-policies/for-namespace
 - authorization-policies/for-ingress-gateway
 - sidecars/for-namespace
+- for-memorystore
+- ../upstream/sidecars/for-memorystore
+patchesJson6902:
+- target:
+    kind: Sidecar
+    name: cartservice
+  patch: |-
+    - op: replace
+      path: /spec/egress/0/hosts
+      value:
+        - "istio-system/*"
+        - "./cart.memorystore-redis.onlineboutique"
